@@ -147,10 +147,11 @@ nav {
 .AboutContainer {
   width: 100%;
   max-width: 1200px;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 15px;
 }
 
 .Sphere {
@@ -265,7 +266,15 @@ footer {
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
+  min-height: 150px;
   background-color: rgba(196, 196, 196, 0.4);
+}
+#contactsText{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (min-width: 1124px) {
   .BurgerMenu {
@@ -301,17 +310,17 @@ footer {
   /* .Portfolio{
     min-height: 0px;
   } */
-  .PortfolioImages{
+  .PortfolioImages {
     flex-direction: column;
   }
-  .ImagesLeft{
+  .ImagesLeft {
     width: 80%;
   }
-  .ImagesRight{
+  .ImagesRight {
     display: none;
   }
 }
-.YTVIDEO{
+.YTVIDEO {
   width: 780px;
   height: 450px;
 }
@@ -336,9 +345,12 @@ footer {
   .MainContainer p {
     font-size: 18px;
   }
-  .YTVIDEO{
+  .YTVIDEO {
     width: 600px;
     height: 400px;
+  }
+  .Portfolio {
+    min-height: 1250px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -351,34 +363,29 @@ footer {
   .AboutUsPhoto {
     width: 60%;
   }
-  .TechInfo{
+  .TechInfo {
     align-items: center;
     flex-direction: column;
   }
-  .TechInfoText{
+  .TechInfoText {
     width: 90%;
   }
-  .TechEquipment{
-    min-height: 1500px;
+  .TechEquipment {
+    min-height: 1300px;
   }
-  .Portfolio{
-    min-height: 1000px;
-  }
-}
-@media screen and (max-width: 670px) {
-  .TechEquipment{
-    min-height: 1800px;
+  .Portfolio {
+    min-height: 1200px;
   }
 }
 @media screen and (max-width: 620px) {
-  .YTVIDEO{
+  .YTVIDEO {
     width: 450px;
     height: 300px;
   }
-  .Video p{
+  .Video p {
     font-size: 16px;
   }
-  .TechEquipment{
+  .TechEquipment {
     min-height: 1350px;
   }
 }
@@ -394,9 +401,15 @@ footer {
   .AboutUsText {
     font-size: 20px;
   }
-  .YTVIDEO{
+  .YTVIDEO {
     width: 450px;
     height: 300px;
+  }
+  .TechEquipment {
+    min-height: 1500px;
+  }
+  .Portfolio {
+    min-height: 850px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -404,25 +417,27 @@ footer {
     font-size: 16px;
     width: 90%;
   }
-  .YTVIDEO{
+  .YTVIDEO {
     width: 90%;
     height: 250px;
   }
-  .TechEquipment{
-    min-height: 1400px;
+  .TechEquipment {
+    min-height: 1700px;
   }
 }
 @media screen and (max-width: 400px) {
-
-  .TechEquipment{
-    min-height: 2500px;
+  .TechEquipment {
+    min-height: 1600px;
   }
-  h2{
+  h2 {
     font-size: 20px;
+  }
+  .Portfolio {
+    min-height: 800px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 340px) {
   .AboutUsMainText {
     font-size: 20px;
   }
@@ -431,5 +446,19 @@ footer {
   }
   .AboutUsPhoto {
     width: 90%;
+  }
+  .TechEquipment {
+    min-height: 1800px;
+  }
+  .Portfolio {
+    min-height: 600px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .TechInfo h3 {
+    font-size: 18px;
+  }
+  .TechInfo p {
+    font-size: 15px;
   }
 }
