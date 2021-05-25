@@ -48,6 +48,9 @@
           Cтворює інноваційні рішення та індивідуальний підхід для абсолютно
           нового покоління аерозйомки.
         </p>
+        <button onclick="{toggleContactUS()}" class="ContactUSButton">
+          Contact Us
+        </button>
       </div>
     </div>
     <div id="about" class="AboutUs">
@@ -107,14 +110,24 @@
         disposal, there isn’t a drone related production service you won’t find
         at CineDrones.
       </p>
-      <iframe
+      <!-- <iframe
         class="YTVIDEO"
         src="https://www.youtube.com/embed/bCV9UMKNUic?controls=0"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe>
+      ></iframe> -->
+      <div class="video-foreground">
+        <div class="VideoBackground"></div>
+        <video controls autoplay loop muted>
+          <source
+            src="./assets/videos/Lviv Polytechnic National University __ Fly4Studio __ Аерозйомка Львів.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
 
     <div class="TechEquipment">
@@ -157,6 +170,49 @@
           </p>
         </div>
       </div>
+      <div class="TechInfo">
+        <div class="Drones">
+          <h2>Дрони</h2>
+          <table class="styled-table" style="width: 60%">
+            <tr>
+              <th>Назва</th>
+              <th>Радіус дії</th>
+              <th>Макс. час польоту</th>
+              <th>Вага</th>
+            </tr>
+            <tr>
+              <td>DJI Matrice 210 RTK V2</td>
+              <td>8000м</td>
+              <td>до 33хв</td>
+              <td>4910г</td>
+            </tr>
+            <tr>
+              <td>DJI Mavic Pro 2</td>
+              <td>7000м</td>
+              <td>до 27хв</td>
+              <td>907г</td>
+            </tr>
+            <tr>
+              <td>DJI Matrice 210 RTK V2</td>
+              <td>7000м</td>
+              <td>до 27хв</td>
+              <td>743г</td>
+            </tr>
+            <tr>
+              <td>DJI FPV</td>
+              <td>16800м</td>
+              <td>до 20хв</td>
+              <td>795г</td>
+            </tr>
+            <tr>
+              <td>DJI Mavic Air 2</td>
+              <td>18500м</td>
+              <td>до 34хв</td>
+              <td>570г</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
     <div class="Portfolio">
       <div id="portfolio" class="PortfolioHeader"><h2>Портфоліо</h2></div>
@@ -181,6 +237,23 @@
         <img alt="" src="./assets/images/phone.png" />
       </div>
     </footer>
+    <div id="ContactUS" class="ContactUS">
+      <button onclick="toggleContactUS()">&#10006;</button>
+      <form action="">
+        <div><h1>Contact us</h1></div>
+        <h2>Email</h2>
+        <input placeholder="Type your email" type="emeil" />
+        <h2>Message</h2>
+        <textarea
+          placeholder="Type your message"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button>Send</button>
+      </form>
+    </div>
     <script src="./js/script.js"></script>
   </body>
 </html>
