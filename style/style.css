@@ -389,8 +389,8 @@ footer {
 }
 #ContactUS > button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 5px;
+  right: 5px;
   border: none;
   outline: none;
   z-index: 10;
